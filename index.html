@@ -1,63 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bolan Furniture</title>
+<title>Bolan Furniture | Quality Furniture</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body{
-    font-family: Arial, sans-serif;
     margin:0;
-    background:#f5f5f5;
+    font-family:Arial, sans-serif;
+    background:#f7f3ee;
     color:#333;
 }
 header{
-    background:#5b2c06;
+    background:#5a3518;
     color:white;
     padding:25px;
     text-align:center;
 }
 nav{
-    background:#222;
+    background:#3d230f;
     padding:12px;
     text-align:center;
 }
 nav a{
     color:white;
-    margin:10px;
+    margin:15px;
     text-decoration:none;
 }
-section{
-    padding:25px;
+.hero{
+    padding:50px 20px;
     text-align:center;
+    background:#e8d5bd;
+}
+.hero h1{
+    font-size:40px;
+}
+.btn{
+    background:#5a3518;
+    color:white;
+    padding:12px 25px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.section{
+    padding:30px 20px;
+    text-align:center;
+}
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+.gallery img{
+    width:280px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
 }
 .card{
     background:white;
-    margin:15px;
     padding:20px;
-    border-radius:10px;
-}
-button{
-    background:#25D366;
-    color:white;
-    border:0;
-    padding:12px 25px;
-    border-radius:5px;
-    font-size:16px;
-}
-.gallery img{
-    width:90%;
-    max-width:300px;
-    margin:10px;
+    margin:15px;
     border-radius:10px;
 }
 footer{
-    background:#222;
+    background:#3d230f;
     color:white;
     text-align:center;
     padding:15px;
 }
 </style>
+
 </head>
 
 <body>
@@ -70,55 +84,59 @@ footer{
 <nav>
 <a href="#home">Home</a>
 <a href="#gallery">Gallery</a>
-<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<section id="home">
-<div class="card">
-<h2>Welcome to Bolan Furniture</h2>
-<p>Modern Furniture | Sofa Sets | Beds | Tables | Custom Orders</p>
-
-<a href="https://wa.me/923012529195">
-<button>Contact Now</button>
-</a>
-</div>
+<section class="hero" id="home">
+<h1>Modern Furniture Collection</h1>
+<p>Sofa Sets | Beds | Tables | Custom Orders</p>
+<a class="btn" href="#contact">Contact Now</a>
 </section>
 
-<section id="gallery">
-<h2>Our Furniture</h2>
+
+<section class="section" id="gallery">
+<h2>Our Furniture Gallery</h2>
+
 <div class="gallery">
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
+<img src="images/sofa.jpg">
+<img src="images/bed.jpg">
+<img src="images/table.jpg">
+<img src="images/furniture.jpg">
+</div>
+
+</section>
+
+
+<section class="section">
+<div class="card">
+<h2>Why Choose Us?</h2>
+<p>✔ Premium Quality Furniture<br>
+✔ Custom Designs<br>
+✔ Affordable Prices<br>
+✔ Trusted Service</p>
 </div>
 </section>
 
-<section id="about">
-<div class="card">
-<h2>About Us</h2>
-<p>
-Bolan Furniture provides quality furniture with modern designs,
-comfortable sofa sets, beds, tables and custom orders.
-</p>
-</div>
-</section>
 
-<section id="contact">
-<div class="card">
+<section class="section" id="contact">
+
 <h2>Contact Us</h2>
-<p>📞 03012529195</p>
-<p>📍 2VGQ+2MQ, Near Askani Market, Post Office, Hub, Balochistan</p>
 
-<a href="https://wa.me/923012529195">
-<button>WhatsApp</button>
-</a>
+<p>
+📍 2VGQ+2MQ, Near Askani Market Post Office
+</p>
 
-</div>
+<p>
+📞 Call: Your Number Here
+</p>
+
+<a class="btn" href="https://wa.me/">WhatsApp</a>
+
 </section>
+
 
 <footer>
-© 2026 Bolan Furniture. All Rights Reserved
+© 2026 Bolan Furniture. All Rights Reserved.
 </footer>
 
 </body>
